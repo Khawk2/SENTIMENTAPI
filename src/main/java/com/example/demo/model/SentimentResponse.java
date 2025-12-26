@@ -5,4 +5,9 @@ public class SentimentResponse {
     }
 
 
+    public static class analyze extends SentimentResponse {
+        public analyze(SentimentRequest solicitud) {
+            super();
+        }
+    }
 }
