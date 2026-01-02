@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.dto.SentimentRequest;
 import com.example.demo.dto.SentimentResponse;
 import com.example.demo.service.SentimentService;
+import com.example.demo.service.StatsService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,6 +20,7 @@ import java.util.Map;
 public class SentimentController {
 
     private final SentimentService sentimentService;
+    private final StatsService statsService;
 
     @PostMapping("/sentiment")
     public ResponseEntity<SentimentResponse> analyzeSentiment(
@@ -29,4 +31,14 @@ public class SentimentController {
 
         return ResponseEntity.ok(response);
     }
+
+    //localhost:8080/api/stats
+    @GetMapping("/stats")
+    public ResponseEntity<Map<String, Object>> getStatistics() {
+        log.info("Recibida la petición para obtener estadisticas");
+
+        Map<String, Object> stats = statsService.getStatistics();
+        return ResponseEntity.ok(stats);
+    }
+
 }
