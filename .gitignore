@@ -1,33 +1,30 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Global / OS
+.DS_Store
+Thumbs.db
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# IDEs / Editors
 .vscode/
+.idea/
+*.iml
+
+# Logs (globales)
+*.log
+
+# Environment variables
+.env
+.env.*
+*.local
+
+# Git internals (por seguridad)
+.gitmodules
+
+# Temporary / swap files
+*.tmp
+*.swp
+*.swo
+
+# Archives (accidentales)
+*.zip
+*.tar
+*.tar.gz
+*.rar
