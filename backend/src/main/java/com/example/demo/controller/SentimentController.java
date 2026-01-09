@@ -41,4 +41,11 @@ public class SentimentController {
         return ResponseEntity.ok(stats);
     }
 
+    //localhost:080/api/stats
+    @GetMapping("/health")
+    public ResponseEntity<Map<String, String>> health(){
+        return ResponseEntity.ok(Map.of("status", "UP", "service", "Sentiment Api"));
+    }
+
+
 }

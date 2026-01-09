@@ -142,6 +142,11 @@ Obtiene estadísticas sobre los análisis realizados.
 }
 ```
 
+### 3. Obtener Estado del servicio Sentiment API
+
+
+
+
 ## Documentación de la API
 
 Una vez que la aplicación esté ejecutándose, puedes acceder a la documentación interactiva de Swagger en:
