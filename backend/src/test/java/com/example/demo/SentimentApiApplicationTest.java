@@ -4,10 +4,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SentimentApiApplicationTests {
+public class SentimentApiApplicationTest {
 
     @Test
     void contextLoads() {
     }
-
 }
